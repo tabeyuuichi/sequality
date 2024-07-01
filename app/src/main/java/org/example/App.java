@@ -4,11 +4,15 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+    Calculate calculate = new Calculate();
+    calculate.ans1(2, 3);
+    calculate.ans2(1, 10);
+    calculate.ans3(1, 10);
+  }
 }
